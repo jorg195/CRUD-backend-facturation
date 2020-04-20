@@ -222,7 +222,7 @@ public class ClienteRestController {
 			//Se elimina el cliente
 			clienteService.delete(id);
 		} catch (DataAccessException e) {
-			response.put("mensaje", "Error al eliminar el cliente en la base de datos");
+			response.put("mensaje", "Error al Eliminar el cliente en la base de datos");
 			response.put("error", e.getMessage() + ": " + e.getMostSpecificCause().getMessage());
 			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
 		}

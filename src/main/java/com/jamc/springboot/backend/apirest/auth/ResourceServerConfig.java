@@ -41,6 +41,11 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 		config.setAllowedMethods(Arrays.asList("GET","POST","PUT","DELETE","OPTIONS"));
 		config.setAllowCredentials(true);
 		config.setAllowedHeaders(Arrays.asList("Content-Type","Authorization"));
+		
+		
+		
+		
+		
 	
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 		source.registerCorsConfiguration("/**", config); //Configuración para todas las rutas del backend
